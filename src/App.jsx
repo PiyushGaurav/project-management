@@ -1,9 +1,12 @@
 import React from 'react';
+import ProjectSidebar from './components/ProjectSidebar';
+import NewProject from './components/NewProject';
 
 export default function App() {
 	return (
-		<div class="space-y-5">
-			<h1 className="text-3xl font-bold underline">Hello world!</h1>
-		</div>
+		<main className="h-screen my-8 flex gap-8 ">
+			<ProjectSidebar />
+			<NewProject />
+		</main>
 	);
 }
